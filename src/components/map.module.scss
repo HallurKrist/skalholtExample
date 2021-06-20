@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    // flex-direction: col;
+  }
+
+  .mapContainer {
+    width: 70%;
+    // height: 100vh;
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+  
+  .map {
+    // opacity: 0;
+    z-index: 10;
+  }
+
+  *:focus {
+      outline: none;
+  }
+
+  .interactables {
+      
+      width: 20%;
+
+      &__object {
+        border: 1px solid black;
+        border-radius: 5px;
+        list-style-type: none;
+        margin-bottom: 3px;
+      }
+
+      &__currentObject {
+        border: 1px solid black;
+        border-radius: 5px;
+        list-style-type: none;
+        margin-bottom: 3px;
+        background-color: lightgray;
+      }
+  }
+
+  svg {
+      path {
+          fill: blue;
+
+          // &:hover {
+          //   fill: rgba(168,43,43,0.83);
+          // }
+
+          &[aria-current='true'] {
+            fill: rgba(168,43,43,0.83);
+          }
+      }
+
+  }
