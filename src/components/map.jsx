@@ -46,7 +46,7 @@ export function Map() {
               <VectorMap {...iceland} layerProps={layerProps} currentLayers={[current]} />
             </div>
           </div>
-          <img alt='map details' src='https://notendur.hi.is/~hkh32/skalholtTMP/mapPNG.png'
+          <img alt='map details' src='https://notendur.hi.is/hkh32/skalholtTMP/1670%20map.svg'
                   className={s.image}/>
         </div>
 
